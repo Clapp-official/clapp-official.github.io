@@ -1,6 +1,6 @@
 ﻿/*スマホ対応*/
 
-@media all and (max-width: 670px){
+@media screen and (max-width: 670px){
 
     .header-right {
         display: none;          
