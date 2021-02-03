@@ -1,80 +1,101 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title>Clapp</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <meta name="description" content="Clapp公式サイト トップページ">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="keywords" content="clapp">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <meta charset="UTF-8">
+    <title>CLapp</title>
+    <link rel="icon" href="img/Clapp-ver2-logo.png">
+    <meta name="description" content="Clapp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <meta name="google-site-verification" content="JM0A9QvI_BhG5jXZN6zt97COBXl6xDKLHU7LDgbtwBM" />
+    <link rel="stylesheet" href="https://use.typekit.net/kzc6bbo.css"> <!--AllRoundGothic-->
 </head>
+
 <body>
-    <!-- ヘッダー -->
     <header>
-        <div class="header">
-            <div class="logo-block">
-                <img class="header-logo" src="img/clappLogo.png" alt="ロゴ">
-            </div>
-            <a class="header-title" href="index.html"><span class="clapp-C">C</span><span class="clapp-L">l</span>app</a>
-            
-            <div id="humburg">
-                <input id="input" type="checkbox">
-                <label id="label" for="input"><span class="menu-icon"><i class="fa fa-bars"></i></span></label>
-                <div id="content">
-                    <a href="index.html"> HOME</a>
-                    <a href="works.html"> WORKS</a>
-                    <a href="member.html"> MEMBER</a>
-                    <a href="contact.html"> CONTACT</a>
-                </div>
-            </div>
-           
-            <div class="header-right">
-                <a href="works.html">WORKS</a>
-                <a href="member.html">MEMBER</a>
-                <a href="contact.html">CONTACT</a>
-            </div>
+        <div class="page-header wrapp">
+            <a href="index.html"><img src="img/Clapp-ver2-set-yoko.png" alt="clappロゴ" class="clapp-logo"></a>
+                <ul class="header-nav">
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="works.html">WROKS</a></li>
+                    <li><a href="member.html">MEMBER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
         </div>
     </header>
-
-  
-    <div class="block">
-            <h1 class="title">COMPANY</h1>
-            <p class="japanese">会社概要</p>
-            <div class="text-block company">
-                <p><br>人の人生を変えてしまうほど便利なものを<br></p>
-                <p><br>人々の生活や人とのつながりに寄り添うサービスを提供したい</p>
+    <div class="main">
+        <div class="bgi" id="top">
+            <div class="bg-text">
+                <h1>人生を変えてしまうほど便利なものを</h1>
+                <p>人々の生活や人とのつながりに寄り添うサービスを提供したい</p>
                 <p>そんな思いで高校と大学の同じクラスだった友達2人を誘いClappを設立しました</p>
                 <p>Clappという名前は</p>
-                <p><span>「</span><span>Class</span> (クラス、優秀な) + <span>app</span> (アプリケーション) = <span>Clapp</span> (クラップ) <span>」</span></p>
+                <p>「Class (クラス、優秀な) + app (アプリケーション) = Clapp (クラップ) 」</p>
                 <p>という造語から生まれました</p>
-                <p>ソフトウェア開発を中心に</p><p>今日にない新しいものを生み出し、人々の幸せをつくる手助けができれば幸いです</p>
+                <p>ソフトウェア開発を中心に</p>
+                <p>今日にない新しいものを生み出し、人々の幸せをつくる手助けができれば幸いです</p>
             </div>
-     </div>
-  
-
-    <!-- 本文 -->
-    <!-- <div class="mainmenu">
-           <div class="menu">
-               <a class="btn company" href="company.html">COMPANY</a>
-           </div>
-           <div class="menu">
-               <a class="btn company" href="works.html">WORKS</a>
-           </div>
-           <div class="menu">
-               <a class="btn company" href="member.html">MEMBER</a>
-           </div>
-           <div class="menu">
-               <a class="btn company" href="contact.html">CONTACT</a>
-           </div>
-       </div>
-       -->
-
+        </div>
+        <div class="top-works"> <!-- topページでの紹介アプリを変更する場合はここを変更 -->
+             <div class="tag">
+                 <div class="box"></div>
+                 <p>WORKS</p>
+             </div>
+                <div class="f-container">
+                    <div class="f-item text-box">
+                        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+                        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+                        <p>この文章はダミーです。</p>
+                        <p>この文章はダミーです。</p>
+                        <p>この文章はダミーです。</p>
+                    </div>
+                    <div class="f-item app-intro"> <!-- app-introがアプリ紹介のクラスです -->
+                        <div class="app-intro-tag">
+                            <a href="works/work-1.html"><img src="img/shareHouse.png" alt="sharehouseロゴ" class="SH-logo"></a>
+                            <a href="works/work-1.html"><p>SHARE HOUSE</p></a>
+                        </div>
+                        <hr class="top-app-line">
+                        <div class="app-images">
+                            <div class="app-image"></div>
+                            <div class="app-image"></div>
+                            <div class="app-image"></div>
+                        </div>
+                    </div>
+             </div>
+             <div class="read-button">
+                 <a href="works.html" class="rb-works">WORKSをもっとみる</a>
+             </div>
+        </div>
+        <div class="top-social">
+            <div class="tag">
+                <div class="box"></div>
+                <p>SOCIAL MEDIA</p>
+            </div>
+                 <div class="f-container">
+                     <div class="f-item-social text-box-social">
+                         <p>アプリ開発や制作物について、日々発信しています</p>
+                         <div class="icon-flex">
+                             <a href="https://www.instagram.com/redleafinisland.app/"><img src="img/instagram-icon.png" alt="開発者のインスタグラムアカウントへ" class="icon"></a>
+                             <a href="https://twitter.com/redleafinisland"><img src="img/twitter-icon.png" alt="開発者のツイッターアカウントへ" class="icon"></a>
+                         </div>
+                     </div>
+                     <div class="f-item-social twitter"></div>
+                 </div>
+        </div>
+        <div class="top-contact"> <!-- お問い合わせフォームの制作ができるようになったら作り替える -->
+            <div class="tag">
+                <div class="box"></div>
+                <p>CONTACT</p>
+            </div>
+            <p class="contact-p">お仕事のご相談などありましたら、お気軽にご相談ください</p>
+            <div class="read-button">
+                <a href="" class="rb-contact">お問い合わせはこちら</a>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>(c) Clapp</p>
+        <p>Clapp Offical</p>
     </footer>
 </body>
 </html>
