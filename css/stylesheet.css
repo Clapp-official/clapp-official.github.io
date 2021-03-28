@@ -5,11 +5,11 @@ html {
 body {
     font-family: "Helvetica Neue", "Hiragino Sans", "Meiryo", sans-serif;
     color: #707070;
-    line-height: 20px;
     background-color: #fafafa;
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 img {
     max-width: 100%;
@@ -49,7 +49,7 @@ li {
     font-weight: 300;
 }
 .header-nav li {
-    height: 70px;
+    height: 100%;
 }
 .header-nav a {
     color: #707070;
@@ -68,8 +68,10 @@ li {
 /* top
  */
 #top {
-    background-image: url(../img/mac-neon-2.png);
-    min-height: 100vh;
+    background-image: url(../img/mac-neon-1.png);
+    height: 800px;
+    width: 100%;
+    z-index: -1;
 }
 .bgi {
     background-size: cover;
@@ -80,7 +82,7 @@ li {
     text-align: center;
 }
 .bg-text h1 {
-    padding: 223px 0 102px;
+    padding: 170px 0 102px;
     font-weight: 600;
     font-size: 48px;
     color: #f5f5f5;
@@ -94,6 +96,9 @@ li {
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.58);
     padding-bottom: 26px;
 }
+.top-works,.top-SC {
+    z-index: 10;
+}
 
 /* top-tag
  */
@@ -101,20 +106,38 @@ li {
     width: 15px;
     height: 40px;
     background: #d42828;
-    margin-left: 180px;
-    margin-top: 108px;
 }
 .tag {
     display: flex;
+    align-items: center;
+    margin-top: 104px;
 }
-.tag p {
+.tag2 {
+    display: flex;
+    align-items: center;
+    margin-top: 104px;
+    margin-left: 3%;
+}
+.tag p,
+.tag2 p {
     font-size: 42px;
     font-family: all-round-gothic, sans-serif;
     font-weight: 700;
     font-style: normal;;
     margin-left: 23px;
-    margin-top: 104px;
     line-height: 1.214;
+}
+.works-tag {
+    max-width: 1200px;
+    margin-left: 3%;
+}
+.works-tag-box {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tag-contact {
+    margin-left: 8%;
 }
 
 /* top-works
@@ -123,20 +146,30 @@ li {
 .f-container {
     display: flex;
     justify-content: space-around;
-    width: 1080px;
+    max-width: 1200px;
     margin: 65px auto 0;
 }
 .f-item {
-    flex-basis: 500px;
-    margin: 0 30px;
+    margin: 0 20px 0 45px;
+}
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .text-box p {
     font-size: 13px;
     text-align: center;
+    margin: 8px 0;
 }
 .app-intro-tag {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
+}
+.app-intro-tag a {
+    margin-left: 18px;
+    margin-right: 15px;
 }
 .app-intro {
     display: flex;
@@ -144,17 +177,11 @@ li {
     align-items: center;
 }
 .app-intro p {
-    font-family: "Hiragino Sans";
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
-    text-align: center;
-    color: #707070;
+    font-size: 18px;
 }
 .SH-logo {/* 現在：ShareHouseのアプリ紹介になってます */
     width: 51px;
     height: 51px;
-    margin-right: 48px;
 }
 .top-app-line {
     width: 290px;
@@ -163,14 +190,32 @@ li {
     border-top: 1px #707070 solid;
     margin: 40px 0;
 }
-.read-button {
+.app-images {
+    display: flex;
+}
+.app-image {
+    width: auto;
+    height: 300px;
+    padding: 0 50px;
+}
+.app-intro {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.app-intro p {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+/* workのボタン */
+.read-button {  
     display: flex;
     justify-content: center;
 }
 .rb-works {
     color: #707070;
     background-color: #d9d9d9;
-    margin-top: 93px;
+    margin: 86px 0 50px;
     padding: 13px 24px;
     border-radius: 35px;
     transition: color .7s;
@@ -184,7 +229,7 @@ li {
  */
 .f-item-social {
     flex-basis: 500px;
-    margin: 0 30px;
+    margin: 0 40px 0 5px;
 }
 .text-box-social p {
     margin-top: 50px;
@@ -208,7 +253,7 @@ li {
  .rb-contact {
     color: #707070;
     background-color: #d9d9d9;
-    margin-top: 70px;
+    margin-top: 90px;
     padding: 13px 24px;
     border-radius: 35px;
     transition: color .7s;
@@ -220,7 +265,23 @@ li {
 .contact-p {
     font-size: 13px;
     text-align: center;
-    margin-top: 93px;
+    margin-top: 115px;
+}
+
+/* top-SC
+*/
+.f-container2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 65px auto 0;
+}
+.top-SC {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.SC-item {
+    width: 50%;
 }
 
 /* footer
@@ -234,4 +295,5 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 150px;
+    z-index: 10;
 }

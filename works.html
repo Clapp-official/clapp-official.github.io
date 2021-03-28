@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/works.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/works-responsive.css">
     <link rel="stylesheet" href="https://use.typekit.net/kzc6bbo.css"> <!--AllRoundGothic-->
 </head>
 
@@ -16,19 +16,54 @@
     <header>
         <div class="page-header wrapp">
             <a href="index.html"><img src="img/Clapp-ver2-set-yoko.png" alt="clappロゴ" class="clapp-logo"></a>
-                <ul class="header-nav">
-                    <li><a href="index.html">TOP</a></li>
-                    <li><a href="works.html">WROKS</a></li>
-                    <li><a href="member.html">MEMBER</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+            <div class="nav-wrapper">
+            <nav class="header-nav-hum">
+                <ul class="header-nav nav-list">
+                    <li class="nav-item"><a href="index.html">TOP</a></li>
+                    <li class="nav-item"><a href="works.html">WROKS</a></li>
+                    <li class="nav-item"><a href="members.html">MEMBER</a></li>
+                    <li class="nav-item"><a href="contact.html">CONTACT</a></li>
                 </ul>
+            </nav>
+            </div>
+        </div>
+        <div class="burger-btn"><!-- ③ハンバーガーボタン -->
+            <span class="bar bar_top"></span>
+            <span class="bar bar_mid"></span>
+            <span class="bar bar_bottom"></span>
         </div>
     </header>
     <div class="main">
-   
+        <div class="head">
+            <h1>WORKS</h1>
+            <p>実績</p>
+        </div>
+        <div class="app-container ac-wrapp">
+            <div class="item">
+                <a href="works/work-1.html"><img src="img/ShareHouse-logo.png" alt="sharehouseロゴ" class="app-image"></a>
+                <a href="works/work-1.html" class="item-p"><p>Share House</p></a>
+            </div>
+            <div class="item">
+                <img src="img/seisaku-chu.png" alt="現在制作中" class="app-image">
+                <a href="#" class="item-p"></a><p>   </p>
+            </div>
+            <div class="item">
+                <img src="img/seisaku-chu.png" alt="現在制作中" class="app-image">
+                <a href="#" class="item-p"></a><p>   </p>
+            </div>
+        </div>
+        <div class="summary">
+            <p>現在もアプリを製作中です</p>
+            <p>お仕事の依頼などございましたら、お気軽にご相談ください</p>
+            <div class="read-button">
+                <a href="./contact.html" class="rb-contact"><p>お問い合わせはこちら</p></a>
+            </div>
+        </div>
     </div>
     <footer>
         <p>Clapp Offical</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="./js/script.js"></script>
 </body>
 </html>
