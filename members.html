@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/members.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/members-responsive.css">
     <link rel="stylesheet" href="https://use.typekit.net/kzc6bbo.css"> <!--AllRoundGothic-->
 </head>
 
@@ -16,19 +16,55 @@
     <header>
         <div class="page-header wrapp">
             <a href="index.html"><img src="img/Clapp-ver2-set-yoko.png" alt="clappロゴ" class="clapp-logo"></a>
-                <ul class="header-nav">
-                    <li><a href="index.html">TOP</a></li>
-                    <li><a href="works.html">WROKS</a></li>
-                    <li><a href="member.html">MEMBER</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+            <div class="nav-wrapper">
+            <nav class="header-nav-hum">
+                <ul class="header-nav nav-list">
+                    <li class="nav-item"><a href="index.html">TOP</a></li>
+                    <li class="nav-item"><a href="works.html">WROKS</a></li>
+                    <li class="nav-item"><a href="members.html">MEMBER</a></li>
+                    <li class="nav-item"><a href="contact.html">CONTACT</a></li>
                 </ul>
+            </nav>
+            </div>
+        </div>
+        <div class="burger-btn"><!-- ③ハンバーガーボタン -->
+            <span class="bar bar_top"></span>
+            <span class="bar bar_mid"></span>
+            <span class="bar bar_bottom"></span>
         </div>
     </header>
     <div class="main">
-   
+        <div class="head">
+            <h1>MEMBERS</h1>
+            <p>社員</p>
+        </div>
+        <div class="members-li">
+            <div class="prof">
+                <img src="img/profileNakashimaKoyo.jpg" alt="プロフィール写真" class="prof-photo">
+                <p>Koyo Nalashima</p>
+                <p>プログラマー兼代表</p>
+            </div>
+            <div class="prof">
+                <img src="img/Clapp-ver2-set-tate-siro.png" alt="プロフィール写真" class="prof-photo">
+                <p>Saki Tsukijima</p>
+                <p>システムエンジニア</p>
+            </div>
+            <div class="prof">
+                <img src="img/Clapp-ver2-set-tate-siro.png" alt="プロフィール写真" class="prof-photo">
+                <p>Shogo Koga</p>
+                <p>デザイナー兼WEBデザイナー</p>
+            </div>
+            <div class="prof">
+                <img src="img/Clapp-ver2-set-tate-siro.png" alt="プロフィール写真" class="prof-photo">
+                <p>Tomoya Hara</p>
+                <p>WEBデザイナー</p>
+            </div>
+        </div>
     </div>
     <footer>
         <p>Clapp Offical</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="./js/script.js"></script>
 </body>
 </html>
