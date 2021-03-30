@@ -65,6 +65,18 @@ li {
   /* font-size: 20px; */
 }
 
+/* main
+*/
+.container {
+  margin: 100px 100px 50px;
+}
+.text {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.mail {
+  font-size: 32px;
+}
 
 
 /* footer

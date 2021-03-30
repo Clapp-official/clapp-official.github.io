@@ -99,7 +99,19 @@
     }
   /* responsive 共通 */
 
-
+/* main
+*/
+.container {
+  margin: 30px 15px;
+}
+.text {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.mail {
+  font-size: 20px;
+  text-align: center;
+}
 
   
 
