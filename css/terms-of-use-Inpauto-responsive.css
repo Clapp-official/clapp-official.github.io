@@ -1,0 +1,143 @@
+/*スマホ対応*/
+
+@media all and (max-width: 480px){
+
+    /* responsive 共通 */
+    /* header */
+    header {
+      display: flex;
+    }
+    .page-header {
+        height: 50px;
+    }
+    .header-nav a {
+        padding: 15px 15px;
+    }
+    .wrapp {
+        padding: 0;
+    }
+    .clapp-logo {
+      width: 100px;
+      height: auto;
+      margin: 10px 0 0 10px;
+    }
+    /* ハンバーガーメニュー */
+    .burger-btn{
+        display: block;      
+        width: 39px;      
+        height: 39px;      
+        position: relative;      
+        z-index: 3;
+        border:none;
+        margin: 5px;
+      }    
+      .bar{
+        width: 20px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #1B1310;
+      }
+      .bar_top{
+        top: 10px;
+      }
+      .bar_mid{
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .bar_bottom{
+        bottom: 10px;
+      }
+      
+      .burger-btn.close .bar_top{
+        transform: translate(-50%,10px) rotate(45deg);
+        transition: transform .3s;
+        background-color: #707070;
+      }
+      .burger-btn.close .bar_mid{
+        opacity: 0;
+        transition: opacity .3s;
+      }
+      .burger-btn.close .bar_bottom{
+      transform: translate(-50%,-8px) rotate(-45deg);
+      transition: transform .3s;
+      background-color: #707070;
+      }
+      .nav-wrapper{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      .header-nav-hum {
+        width: 100%;
+        height: 100%;
+        background-color:#1B1310;
+        z-index: 2;
+      }
+      .header-nav-hum
+      .nav-list{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      }
+      .header-nav-hum
+      .nav-item{
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+      body.noscroll{
+        overflow: hidden;
+      }
+    /* responsive 共通 */
+  
+
+
+    .head p {
+        font-size: 15px;
+        padding: 20px 0px 10px 0px;
+    }
+
+  
+  
+    /* summary
+    */
+    .summary {
+      margin-top: 80px;
+    }
+    .summary p {
+      font-size: 10px;
+      line-height: 20px;
+    }
+    .rb-contact {
+      margin: 30px 0 10px;
+      padding: 10px 18px;
+    }
+    .rb-contact p {
+      font-size: 10px;
+    }
+  
+    /* footer
+    */
+    footer {
+      height: 50px;
+      width: 100%;
+      margin-top: 60px;
+    }
+    footer p{
+      font-size: 10px;
+    }
+}
+  
+@media screen and (min-width: 960px){
+    .br-sp {display: none; }
+    .burger-btn {display: none;}
+}

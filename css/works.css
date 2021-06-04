@@ -92,6 +92,11 @@ li {
   gap: 90px 115px;
   grid-template-columns: repeat(3, 1fr);
 }
+
+.app-container img {
+  border-radius: 30px;
+}
+
 .ac-wrapp {
   max-width: 650px;
   margin: 0 auto;
